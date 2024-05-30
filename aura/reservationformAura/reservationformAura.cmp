@@ -1,0 +1,4 @@
+<aura:component implements="lightning:isUrlAddressable">
+    <c:reservationform></c:reservationform>
+
+</aura:component>	

@@ -1,0 +1,22 @@
+/* yourComponent.css */
+
+:host {
+    display: block;
+     padding: 10px; /*Adding padding to the entire component */
+    background-color: #2e45ac; /* Setting background color to grey */
+}
+
+/* Styling the lightning-input elements */
+lightning-input {
+   
+    text-decoration-color: aquamarine;
+    margin-bottom: 10px; /* Adding margin between input elements */
+    padding: 13px; /* Adding padding to input elements */
+    background-color: white; /* Setting input background color */
+}
+lightning-button {
+   
+    margin-left: 50px;
+    margin-bottom: 10px;
+    
+}

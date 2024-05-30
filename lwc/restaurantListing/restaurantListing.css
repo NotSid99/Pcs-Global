@@ -1,0 +1,64 @@
+.restaurant-listing {
+    border: 1px solid #f0efef;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ede7e7;
+}
+
+.restaurant-details h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration-line: overline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.restaurant-details p {
+    margin-top: 0;
+    text-align: center;
+    font-size: medium;
+  
+    font-family:'Times New Roman', Times, serif
+}
+
+.restaurant-image {
+    text-align: center;
+    margin-bottom: 15px;
+    
+    
+}
+
+.restaurant-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  
+}
+
+.reservation-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reservation-button button {
+    padding: 10px 20px;
+    background-color: #911313;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reservation-button button:hover {
+    background-color: #c93c5a;
+}
+.restaurant-details lightning-card{
+    background-color: black;
+    
+}
+.des p{
+   padding-block-start: 2%;
+   padding-bottom: 5%;
+   text-align: center;
+   background-color: #eee7e7;
+}

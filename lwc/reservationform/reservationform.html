@@ -1,0 +1,38 @@
+<template>
+    
+    <div class="reservation-container">
+        <div class="header-container">
+            <h1 class="animated-text">Reservation Form</h1>
+             </div>
+       
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" onchange={NameHandler}/>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" onchange={EmailHandler}/>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" onchange={PhoneHandler} />
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" onchange={DateHandler} />
+            </div>
+            <!-- <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" onchange={TimeHandler} />
+            </div> -->
+            <div class="form-group">
+                <label for="party-size">Party Size</label>
+                <input type="number" id="party-size" name="party-size" min="1" onchange={PartyHandler}/>
+            </div>
+            <div class="form-group">
+              <lightning-button variant="brand" lable="Save Record" title="Create new Resercation" onclick={handleclick}>DOne</lightning-button>
+            </div>
+        </form>
+    </div>
+</template>

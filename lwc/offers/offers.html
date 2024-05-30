@@ -1,0 +1,21 @@
+
+<template>
+    <div class="header-container">
+        <h1 class="animated-text">Special Offers</h1>
+         </div>
+    <div class="container">
+        
+        <template for:each={offers} for:item="offer">
+            <div key={offer.id} class="offer-card">
+                <div class="offer-image">
+                    <img src={offer.imageSrc} alt={offer.title} />
+                </div>
+                <div class="offer-details">
+                    <h2><b>{offer.title}</b></h2>
+                    <p><b></b>{offer.description}</p>
+                    <p>{offer.validity}</p>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

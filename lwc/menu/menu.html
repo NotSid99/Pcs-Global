@@ -1,0 +1,25 @@
+<!-- dishdashPage.html -->
+<template>
+    <lightning-card title="Dishdash Restaurant">
+        <template for:each={dishes} for:item="dish">
+            <div key={dish.id} class="dish-card">
+                <img src={dish.image} alt={dish.name} class="dish-image"/>
+                <div class="dish-details">
+                    <p class="dish-name">{dish.name}</p>
+                    <p class="dish-price">${dish.price}</p>
+                    <lightning-button label="Add to Cart" onclick={addToCart} variant="brand"></lightning-button>
+                </div>
+            </div>
+        </template>
+    </lightning-card>
+    <!-- Cart -->
+    <lightning-card title="Cart" if:true={cart.length}>
+        <template for:each={cart} for:item="item">
+            <div key={item.id}>
+                <p>{item.name} - ${item.price}</p>
+            </div>
+        </template>
+        <p>Total: ${total}</p>
+        <lightning-button label="Generate Bill" onclick={generateBill} variant="brand"></lightning-button>
+    </lightning-card>
+</template>

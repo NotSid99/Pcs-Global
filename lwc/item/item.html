@@ -1,0 +1,32 @@
+<!-- multiCuisineDishes.html -->
+<template>
+    <div class="container">
+        <div class="cuisine south-indian">
+            <div class="overlay"></div>
+            <h2>South Indian</h2>
+            <ul>
+                <template for:each={southIndianDishes} for:item="dish">
+                    <li key={dish.id}>{dish.name}: {dish.description}</li>
+                </template>
+            </ul>
+        </div>
+        <div class="cuisine indian">
+            <div class="overlay"></div>
+            <h2>Indian</h2>
+            <ul>
+                <template for:each={indianDishes} for:item="dish">
+                    <li key={dish.id}>{dish.name}: {dish.description}</li>
+                </template>
+            </ul>
+        </div>
+        <div class="cuisine italian">
+            <div class="overlay"></div>
+            <h2>Italian</h2>
+            <ul>
+                <template for:each={italianDishes} for:item="dish">
+                    <li key={dish.id}>{dish.name}: {dish.description}</li>
+                </template>
+            </ul>
+        </div>
+    </div>
+</template>

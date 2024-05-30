@@ -1,0 +1,24 @@
+/* dishdashPage.css */
+.dish-card {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.dish-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.dish-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.dish-name {
+    font-weight: bold;
+}
+
+.lightning-card {
+    margin-bottom: 20px;
+}

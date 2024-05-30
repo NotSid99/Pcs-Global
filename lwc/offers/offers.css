@@ -1,0 +1,60 @@
+/* offerHeader.css */
+
+.header-container {
+    text-align: center;
+    background-color: #911313;
+    padding: 10px;
+}
+
+.animated-text {
+    animation: moveText 4s linear infinite;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+    display: inline-block;
+    
+}
+
+@keyframes moveText {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* offerPage.css */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ede7e7;
+}
+
+.offer-card {
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    background-color: beige;
+}
+
+.offer-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.offer-image img {
+    width: 50%;
+    height: 100px; /* Adjust height as needed */
+    border-radius: 5px;
+    background-size: contain; /* Keep aspect ratio */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* opacity: 0.8;  */
+}
+
+.offer-details {
+    padding: 10px 0;
+}
